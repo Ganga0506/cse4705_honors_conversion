@@ -1,0 +1,23 @@
+{
+    "intents": [
+      {
+        "tag": "course_recommendation",
+        "patterns": [
+          "what classes should I take",
+          "recommend courses",
+          "easy classes"
+        ]
+      },
+      {
+        "tag": "study_habits",
+        "patterns": [
+          "how do I improve my GPA",
+          "help my grades",
+          "I am failing",
+          "how should I study",
+          "study tips",
+          "best way to learn"
+        ]
+      }
+    ]
+  }
