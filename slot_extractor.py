@@ -137,7 +137,7 @@ def extract_slots(sentence, intent):
         slots["concentration"] = extract_concentration(sentence)
         slots["year"]          = extract_year(sentence)
 
-    elif intent == "course_selection":
+    elif intent == "course_recommendation":
         slots["major"]           = extract_major(sentence)
         slots["concentration"]   = extract_concentration(sentence)
         slots["year"]            = extract_year(sentence)
