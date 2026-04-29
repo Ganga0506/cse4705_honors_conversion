@@ -5,7 +5,12 @@
         "patterns": [
           "what classes should I take",
           "recommend courses",
-          "easy classes"
+          "easy classes",
+          "what should I enroll in next semester",
+          "best electives for me",
+          "what classes are easy in the major",
+          "course suggestions for GPA boost",
+          "what should I take as a freshman"
         ]
       },
       {
@@ -16,7 +21,12 @@
           "I am failing",
           "how should I study",
           "study tips",
-          "best way to learn"
+          "best way to learn",
+          "how do I pass exams",
+          "how to stop procrastinating",
+          "how to focus while studying",
+          "study schedule tips",
+          "how to remember information faster"
         ]
       }
     ]
