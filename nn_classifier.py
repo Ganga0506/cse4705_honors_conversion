@@ -2,6 +2,7 @@ import torch
 import numpy as np
 from model import ChatbotNN
 from preprocess import tokenize, bag_of_words
+from slot_extractor import extract_slots
 
 # ---- Load saved model ----
 data = torch.load("chatbot_model.pth")
@@ -39,6 +40,19 @@ def classify(sentence):
             tag: round(probs[i].item(), 4)
             for i, tag in enumerate(tags)
         }
+    }
+
+def classify_and_extract(sentence):
+    intent_result = classify(sentence)
+    intent        = intent_result["intent"]
+    confidence    = intent_result["confidence"]
+
+    slots = extract_slots(sentence, intent)
+
+    return {
+        "intent":     intent,
+        "confidence": confidence,
+        **slots      
     }
 
 # ---- Test it ----
