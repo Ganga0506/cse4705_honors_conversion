@@ -52,7 +52,7 @@ def classify_and_extract(sentence):
     return {
         "intent":     intent,
         "confidence": confidence,
-        **slots      
+        **slots
     }
 
 # ---- Test it ----

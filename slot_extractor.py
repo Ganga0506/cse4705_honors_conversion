@@ -9,7 +9,7 @@ MAJORS = {
     "computer engineering": "CSE",
     "dse": "DSE",
     "ds": "DSE",
-    "data science": "DS"
+    "data science": "DSE"
 }
 
 CONCENTRATIONS = {
@@ -83,7 +83,7 @@ YEAR_WORDS = {
 
 # ---- Extractor functions ----
 def extract_gpa(text):
-    match = re.search(r'\b([0-3]\.\d{1,2})\b', text)
+    match = re.search(r'\b([0-4]\.\d{1,2})\b', text)
     if match:
         gpa = float(match.group(1))
         if 0.0 <= gpa <= 4.0:
