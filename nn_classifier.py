@@ -3,7 +3,7 @@ import numpy as np
 from model import ChatbotNN
 from preprocess import tokenize, bag_of_words
 from slot_extractor import extract_slots
-from decision_tree import recommend
+from decision_tree.decision_tree import recommend
 
 # ---- Load saved model ----
 data = torch.load("chatbot_model.pth")
@@ -128,12 +128,12 @@ def chat(user_message):
 
     if intent == "course_recommendation":
         inputs = [
-            "course_selection",
+            "course_recommendation",
         slots.get("major"),
         slots.get("concentration"),
         slots.get("load_preference"),
         slots.get("course_type"),   
-        slots.get("year")
+        slots.get("year")         
         ]
 
     elif intent == "study_habits":
