@@ -30,13 +30,33 @@ course_map = {
         "weights": [0.25, 0.20, 0.20, 0.15, 0.10, 0.05, 0.05]
     },
 
-    "CONCENTRATION_DATA": {
-        "courses": ["CSE4502", "CSE4701", "CSE2600", "CSE4820", "CSE3800", "CSE3810", "CSE3802"],
+    "CONCENTRATION_SYSTEMS": {
+        "courses": ["CSE4300", "CSE4302", "CSE3300", "CSE3100", "CSE3666", "CSE4709", "CSE3504"],
         "weights": [0.25, 0.20, 0.20, 0.15, 0.10, 0.05, 0.05]
     },
 
-    "CONCENTRATION_SYSTEMS": {
-        "courses": ["CSE4300", "CSE4302", "CSE3300", "CSE3100", "CSE3666", "CSE4709", "CSE3504"],
+    "CONCENTRATION_MOBILE": {
+        "courses": ["CSE4939W", "CSE3200", "CSE3250", "CSE4100", "CSE3150", "CSE4102", "CSE3160"],
+        "weights": [0.25, 0.20, 0.20, 0.15, 0.10, 0.05, 0.05]
+    },
+
+    "CONCENTRATION_NAVAL": {
+        "courses": ["CSE3300", "CSE3666", "CSE4300", "CSE4302", "CSE3504", "CSE3140", "CSE4709"],
+        "weights": [0.25, 0.20, 0.20, 0.15, 0.10, 0.05, 0.05]
+    },
+
+    "CONCENTRATION_ALGORITHMS": {
+        "courses": ["CSE3500", "CSE4502", "CSE4701", "CSE3502", "CSE4705", "CSE3000", "CSE4830"],
+        "weights": [0.25, 0.20, 0.20, 0.15, 0.10, 0.05, 0.05]
+    },
+
+    "CONCENTRATION_BIOINFORMATICS": {
+        "courses": ["CSE3802", "CSE3800", "CSE3810", "CSE4502", "CSE4820", "CSE4830", "CSE4701"],
+        "weights": [0.25, 0.20, 0.20, 0.15, 0.10, 0.05, 0.05]
+    },
+
+    "MAJOR_DATA_SCIENCE": {
+        "courses": ["CSE4502", "CSE4701", "CSE2600", "CSE4820", "CSE3800", "CSE3810", "CSE3802"],
         "weights": [0.25, 0.20, 0.20, 0.15, 0.10, 0.05, 0.05]
     },
 
@@ -123,14 +143,35 @@ def course_response(label, courses):
             f"and highly competitive to have on your resume. "
             f"Your priority courses: {course_str}."
         ),
-        "CONCENTRATION_DATA": (
-            f"Data Science track — center your semester on analytics, databases, and ML. "
-            f"Bioinformatics courses are a strong differentiator for this track in interviews. "
-            f"Focus on: {course_str}."
-        ),
         "CONCENTRATION_SYSTEMS": (
             f"Systems track — OS and architecture are your anchors. "
             f"Computer networks and embedded systems round out the track and are heavily weighted by systems-focused employers. "
+            f"Your priority courses: {course_str}."
+        ),
+        "CONCENTRATION_MOBILE": (
+            f"Mobile Computing track — your courses should be building toward deployable apps and real UI/UX work. "
+            f"Employers in this space want to see projects, not just coursework, so treat every lab as a portfolio piece. "
+            f"Your priority courses: {course_str}."
+        ),
+        "CONCENTRATION_NAVAL": (
+            f"Naval Science and Technology concentration — your path sits at the intersection of systems, "
+            f"networks, and mission-critical software. Reliability and security fundamentals matter here more than anywhere else. "
+            f"Your priority courses: {course_str}."
+        ),
+        "CONCENTRATION_ALGORITHMS": (
+            f"Algorithms and Theory track — this is the hardest concentration to do well in and the most respected. "
+            f"Lean into proof-based thinking and don't skip the theory when it feels abstract; "
+            f"it's exactly what separates candidates in top-tier technical interviews. "
+            f"Your priority courses: {course_str}."
+        ),
+        "CONCENTRATION_BIOINFORMATICS": (
+            f"Bioinformatics concentration — you're sitting at a rare intersection of CS and life sciences "
+            f"that very few undergrads have. That cross-disciplinary depth is a genuine differentiator for research roles and grad school. "
+            f"Your priority courses: {course_str}."
+        ),
+        "MAJOR_DATA_SCIENCE": (
+            f"As a Data Science major your core is analytics, machine learning, and working with real datasets end to end. "
+            f"Don't neglect the statistical foundations — employers and grad programs will probe those just as hard as your coding skills. "
             f"Your priority courses: {course_str}."
         ),
         "PREREQ_CATCH_UP": (
@@ -161,31 +202,43 @@ def course_response(label, courses):
 
 # ENCODING HELPERS
 major_map         = {"CS": 0, "CSE": 1, "DSE": 2}
-concentration_map = {"AI": 0, "Software": 1, "Security": 2, "DataScience": 3, "Systems": 4, "None": 5}
-load_map          = {"Light": 0, "Medium": 1, "Hard": 2}
+concentration_map = {
+    "Artificial Intelligence": 0,
+    "Software Design and Development": 1,
+    "Cybersecurity": 2,
+    "Systems and Networks": 3,
+    "Software Design for Mobile Computing": 4,
+    "Naval Science and Technology": 5,
+    "Algorithms and Theory": 6,
+    "Bioinformatics": 7,
+    "None": 8,
+}
+load_map        = {"Light": 0, "Medium": 1, "Hard": 2}
+course_type_map = {"Core": 0, "Elective": 1}
 
 def encode_gpa_input(user):
     return [
         user["GPA"],
         user["YEAR"],
         major_map.get(user["MAJOR"], 0),
-        concentration_map.get(user["CONCENTRATION"], 5),
+        concentration_map.get(user["CONCENTRATION"], 8),
     ]
 
 def encode_course_input(user):
     return [
         user["YEAR"],
         major_map.get(user["MAJOR"], 0),
-        concentration_map.get(user["CONCENTRATION"], 5),
+        concentration_map.get(user["CONCENTRATION"], 8),
         load_map.get(user["LOAD"], 1),
+        course_type_map.get(user["COURSE_TYPE"], 0),
     ]
 
 
 # TRAINING DATA
 X_gpa = np.array([
-    [3.8, 3, 1, 0], [3.6, 2, 0, 5], [2.4, 2, 0, 5], [3.9, 4, 1, 0],
-    [2.8, 3, 1, 1], [3.2, 2, 1, 1], [3.7, 3, 1, 0], [2.6, 1, 0, 5],
-    [1.8, 1, 0, 5], [1.5, 2, 1, 2],
+    [3.8, 3, 1, 0], [3.6, 2, 0, 8], [2.4, 2, 0, 8], [3.9, 4, 1, 0],
+    [2.8, 3, 1, 1], [3.2, 2, 1, 1], [3.7, 3, 1, 0], [2.6, 1, 0, 8],
+    [1.8, 1, 0, 8], [1.5, 2, 1, 2],
 ])
 y_gpa = np.array([
     "ACCELERATE_TO_OPPORTUNITIES", "SUSTAIN_AND_OPTIMIZE",
@@ -196,16 +249,19 @@ y_gpa = np.array([
 ])
 
 X_course = np.array([
-    [1, 0, 5, 1], [2, 1, 0, 1], [3, 1, 0, 2], [4, 1, 0, 2],
-    [2, 0, 5, 0], [3, 1, 1, 1], [3, 1, 2, 1], [3, 2, 3, 1],
-    [3, 1, 4, 1], [2, 0, 5, 1],
+    [1, 0, 8, 1, 0],  [2, 1, 0, 1, 0],  [3, 1, 0, 2, 0],  [4, 1, 0, 2, 0],
+    [2, 0, 8, 0, 1],  [3, 1, 1, 1, 0],  [3, 1, 2, 1, 0],  [3, 1, 3, 1, 0],
+    [2, 1, 4, 1, 1],  [3, 1, 5, 1, 0],  [3, 0, 6, 2, 0],  [3, 2, 7, 1, 1],
+    [2, 2, 8, 1, 0],
 ])
 y_course = np.array([
     "FOLLOW_CORE_SEQUENCE",    "CONCENTRATION_AI",
     "CHALLENGE_HEAVY_SEMESTER","SENIOR_DESIGN_MODE",
     "REBALANCE_LOAD",          "CONCENTRATION_SOFTWARE",
-    "CONCENTRATION_SECURITY",  "CONCENTRATION_DATA",
-    "CONCENTRATION_SYSTEMS",   "ELECTIVE_EXPLORATION",
+    "CONCENTRATION_SECURITY",  "CONCENTRATION_SYSTEMS",
+    "CONCENTRATION_MOBILE",    "CONCENTRATION_NAVAL",
+    "CONCENTRATION_ALGORITHMS","CONCENTRATION_BIOINFORMATICS",
+    "MAJOR_DATA_SCIENCE",
 ])
 
 
@@ -250,7 +306,7 @@ def run_gpa_help(user):
     top_label   = max(label_probs, key=label_probs.get)
     return GPA_RESPONSES[top_label]
 
-def run_course_selection(user):
+def run_course_reccomdation(user):
     label_probs  = predict_course_label(user)
     top_label    = max(label_probs, key=label_probs.get)
     course_dist  = build_course_distribution(label_probs)
@@ -265,24 +321,28 @@ def recommend(inputs):
     if topic == "gpa_help":
         _, gpa, major, concentration, year = inputs
         return run_gpa_help({"GPA": gpa, "MAJOR": major, "CONCENTRATION": concentration, "YEAR": year})
-    elif topic == "course_selection":
-        _, major, concentration, load, year = inputs
-        return run_course_selection({"MAJOR": major, "CONCENTRATION": concentration, "LOAD": load, "YEAR": year})
+    elif topic == "course_reccomdation":
+        _, major, concentration, load, course_type, year = inputs
+        return run_course_reccomdation({"MAJOR": major, "CONCENTRATION": concentration, "LOAD": load, "COURSE_TYPE": course_type, "YEAR": year})
     else:
-        raise ValueError(f"Unknown topic '{inputs[0]}'. Use 'gpa_help' or 'course_selection'.")
+        raise ValueError(f"Unknown topic '{inputs[0]}'. Use 'gpa_help' or 'course_reccomdation'.")
 
 
 # TEST RUN
 if __name__ == "__main__":
     tests = [
-        ["gpa_help",          1.8,  "CSE", "AI",          2],
-        ["gpa_help",          2.5,  "CS",  "Software",    3],
-        ["gpa_help",          3.5,  "DSE", "DataScience", 3],
-        ["gpa_help",          3.9,  "CSE", "AI",          4],
-        ["course_selection",  "CSE", "AI",          "Hard",   3],
-        ["course_selection",  "CS",  "Security",    "Light",  2],
-        ["course_selection",  "CSE", "Systems",     "Medium", 4],
-        ["course_selection",  "CS",  "DataScience", "Medium", 3],
+        ["gpa_help",          1.8,  "CSE", "None",                           2],
+        ["gpa_help",          2.5,  "CS",  "Software Design and Development", 3],
+        ["gpa_help",          3.5,  "DSE", "None",                           3],
+        ["gpa_help",          3.9,  "CSE", "Artificial Intelligence",        4],
+        ["course_reccomdation",  "CSE", "Artificial Intelligence",              "Hard",   "Core",     3],
+        ["course_reccomdation",  "CS",  "Cybersecurity",                        "Light",  "Elective", 2],
+        ["course_reccomdation",  "CSE", "Systems and Networks",                 "Medium", "Core",     4],
+        ["course_reccomdation",  "DSE", "None",                                 "Medium", "Core",     3],
+        ["course_reccomdation",  "CS",  "Algorithms and Theory",                "Hard",   "Core",     3],
+        ["course_reccomdation",  "CSE", "Bioinformatics",                       "Medium", "Elective", 2],
+        ["course_reccomdation",  "CSE", "Software Design for Mobile Computing", "Medium", "Elective", 3],
+        ["course_reccomdation",  "CSE", "Naval Science and Technology",         "Medium", "Core",     3],
     ]
     for t in tests:
         print(f"\nInput: {t}")
