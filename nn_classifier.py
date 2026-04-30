@@ -129,12 +129,13 @@ def chat(user_message):
     if intent == "course_recommendation":
         inputs = [
             "course_selection",
-            slots.get("major"),
-            slots.get("concentration"),
-            slots.get("load_preference"),
-            slots.get("year"),
-            slots.get("course_type")
+        slots.get("major"),
+        slots.get("concentration"),
+        slots.get("load_preference"),
+        slots.get("course_type"),   
+        slots.get("year")         
         ]
+
     elif intent == "study_habits":
         inputs = [
             "gpa_help",
