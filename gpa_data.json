@@ -1,0 +1,3502 @@
+[
+  {
+    "GPA": 3.8,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.89,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.63,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.44,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.08,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.91,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.13,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.13,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.05,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.15,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.18,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.67,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.4,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.01,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.75,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.2,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.08,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.77,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.87,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.44,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.22,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.5,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.85,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.19,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.82,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.35,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.19,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.05,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.09,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.96,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.05,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.13,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.4,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.69,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.24,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.16,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.72,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.45,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.13,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.06,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.66,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.28,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.94,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.61,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.82,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.4,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.92,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.73,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.51,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.17,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.37,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.91,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.9,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.73,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.47,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.53,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.79,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.35,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.29,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.84,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.36,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.84,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.26,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.41,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.17,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.83,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.82,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.82,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.91,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.8,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.17,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.05,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.51,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.51,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.49,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.49,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.7,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.81,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.22,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.95,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.66,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.4,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.38,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.81,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.2,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.76,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.83,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.14,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.64,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.87,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.38,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.98,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.72,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.77,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.38,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.78,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.63,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.59,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.33,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.07,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.09,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.37,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.86,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.52,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.85,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.96,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.25,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.8,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.09,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.01,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.06,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.59,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.9,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.88,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.47,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.31,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.04,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.08,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.06,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.51,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.94,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.54,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.95,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.76,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.11,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.37,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.86,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.53,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.25,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.86,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.33,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.39,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.27,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.02,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.68,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.12,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.12,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.7,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.42,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.91,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.19,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.99,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.09,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.04,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.44,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.22,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.82,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.92,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.33,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.06,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.2,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.86,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.53,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.85,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.65,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.71,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.16,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.56,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.06,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.62,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.44,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.6,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.49,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.56,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.47,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.2,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.44,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.73,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.24,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.59,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.25,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.59,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.63,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.95,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.38,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.93,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.03,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.83,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.09,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.23,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.39,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.29,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.7,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.29,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.25,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.92,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.66,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.22,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.96,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.38,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.53,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.47,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.25,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.37,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.0,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.82,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.72,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.1,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.61,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.45,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.53,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.39,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.4,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.86,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.41,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.27,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.04,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.41,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.24,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.5,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.4,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.16,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.54,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.9,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.72,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.85,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.44,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.04,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.64,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.87,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.53,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.58,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.16,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.71,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.02,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.94,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.2,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.52,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.75,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.49,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.84,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.13,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.68,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.39,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.51,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.9,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.81,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.12,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.4,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.4,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.26,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.37,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.17,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.52,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.73,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.44,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.42,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.75,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.2,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.39,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.26,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.55,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.84,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.66,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.97,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.23,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.44,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.7,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.5,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.76,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.11,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.0,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.49,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.16,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.14,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.24,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.94,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.24,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.76,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.15,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.29,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.41,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.32,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.97,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.05,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.18,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.59,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.56,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.57,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.38,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.88,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.55,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.01,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.39,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.4,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.9,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.22,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.88,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.75,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.34,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.0,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.97,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.78,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.26,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.55,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.9,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.63,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.99,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.77,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.06,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.91,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.53,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.84,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.87,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.71,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.26,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.91,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.04,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.84,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.09,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.2,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.23,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.3,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.53,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.15,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.72,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.27,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.48,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.1,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.3,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.75,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.92,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.91,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.61,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.46,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.38,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.88,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.44,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.59,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.11,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.57,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.41,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.22,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.72,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.4,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.54,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.77,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.64,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.73,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.43,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.67,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.08,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.98,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.03,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.69,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.81,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.8,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.27,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.52,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.24,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.87,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.32,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.45,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.88,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.77,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.32,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.43,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.58,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.73,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.72,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.46,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.28,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.82,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.76,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.7,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.34,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.43,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.49,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.24,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.2,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.1,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.19,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.84,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.24,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.51,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.12,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.84,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.37,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.93,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.51,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.29,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.19,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.48,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.68,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.73,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.19,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.23,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.68,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.12,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.51,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.57,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.42,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.29,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.21,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.79,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.38,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.38,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.56,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.31,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.53,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.84,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.89,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.03,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.82,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.3,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.87,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.49,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.34,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.5,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.68,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.87,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.7,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.71,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.28,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.98,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.15,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.5,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.71,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.69,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "None",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.59,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.14,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.3,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.53,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.68,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.03,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.32,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.2,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.16,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.72,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.53,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.72,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.33,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.66,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.09,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.54,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.04,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.94,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.74,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.9,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.0,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.78,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.92,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.14,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.33,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.42,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 1.18,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.14,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.63,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.95,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 3.89,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.61,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.55,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.23,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.56,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.37,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.42,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.13,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.68,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.38,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.27,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.88,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.95,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 1.93,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.99,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.21,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.91,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 2.53,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.19,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.26,
+    "YEAR": 4,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.69,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.96,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.5,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Artificial Intelligence",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.45,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Bioinformatics",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.21,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 3.97,
+    "YEAR": 3,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.39,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.74,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.18,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "None",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.45,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.67,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.58,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.94,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.37,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.39,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.91,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.99,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.54,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.73,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.82,
+    "YEAR": 4,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 1.57,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 3.86,
+    "YEAR": 1,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  },
+  {
+    "GPA": 2.3,
+    "YEAR": 4,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Algorithms and Theory",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 3.04,
+    "YEAR": 1,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Naval Science and Technology",
+    "LABEL": "SUSTAIN_AND_OPTIMIZE"
+  },
+  {
+    "GPA": 2.83,
+    "YEAR": 2,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 1.71,
+    "YEAR": 1,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.03,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design for Mobile Computing",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 1.41,
+    "YEAR": 3,
+    "MAJOR": "CSE",
+    "CONCENTRATION": "None",
+    "LABEL": "URGENT_INTERVENTION"
+  },
+  {
+    "GPA": 2.4,
+    "YEAR": 2,
+    "MAJOR": "CS",
+    "CONCENTRATION": "Cybersecurity",
+    "LABEL": "FOUNDATIONAL_HABIT_BUILDING"
+  },
+  {
+    "GPA": 2.64,
+    "YEAR": 3,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Software Design and Development",
+    "LABEL": "TARGETED_COURSE_RECOVERY"
+  },
+  {
+    "GPA": 3.53,
+    "YEAR": 2,
+    "MAJOR": "DSE",
+    "CONCENTRATION": "Systems and Networks",
+    "LABEL": "ACCELERATE_TO_OPPORTUNITIES"
+  }
+]
