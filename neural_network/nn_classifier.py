@@ -1,8 +1,8 @@
 import torch
 import numpy as np
-from nerual_network.model import ChatbotNN
-from nerual_network.preprocess import tokenize, bag_of_words
-from nerual_network.slot_extractor import extract_slots
+from neural_network.model import ChatbotNN
+from neural_network.preprocess import tokenize, bag_of_words
+from neural_network.slot_extractor import extract_slots
 from decision_tree.decision_tree import recommend
 
 # ---- Load saved model ----
@@ -51,7 +51,7 @@ def classify_and_extract(sentence):
         return {
             "intent": "unknown",
             "confidence": confidence,
-            "response": "I'm not sure I understand. Try asking about course recommendations or study tips!"
+            "response": "Sorry, I can only help with course recommendations and study tips! Try asking something like 'what classes should I take?' or 'how do I improve my GPA?'"
         }
 
     slots = extract_slots(sentence, intent)
@@ -115,7 +115,7 @@ def chat(user_message):
         slots = extract_slots(user_message, intent)
         session["pending_intent"] = intent
         session["slots"] = slots
-
+    
     followup = get_missing_followup(session["slots"], session["pending_intent"])
     if followup:
         return followup
@@ -128,7 +128,7 @@ def chat(user_message):
 
     if intent == "course_recommendation":
         inputs = [
-            "course_recommendation",
+        "course_recommendation",
         slots.get("major"),
         slots.get("concentration") or "None", 
         slots.get("load_preference"),

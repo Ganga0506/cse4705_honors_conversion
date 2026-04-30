@@ -125,8 +125,8 @@ def recommend(inputs):
     if topic == "gpa_help":
         _, gpa, major, concentration, year = inputs
         return run_gpa_help({"GPA": gpa, "MAJOR": major, "CONCENTRATION": concentration, "YEAR": year})
-    elif topic == "course_selection":
+    elif topic == "course_recommendation":
         _, major, concentration, load, course_type, year = inputs
         return run_course_selection({"MAJOR": major, "CONCENTRATION": concentration, "LOAD": load, "COURSE_TYPE": course_type, "YEAR": year})
     else:
-        raise ValueError(f"Unknown topic '{inputs[0]}'. Use 'gpa_help' or 'course_selection'.")
+        raise ValueError(f"Unknown topic '{inputs[0]}'. Use 'gpa_help' or 'course_recommendation'.")

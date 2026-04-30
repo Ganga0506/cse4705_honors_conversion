@@ -1,8 +1,8 @@
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
-from nerual_network.preprocess import build_vocab
+from ..preprocess import build_vocab
 import torch
-from nerual_network.model import ChatbotNN
+from ..model import ChatbotNN
 
 all_words, tags, X_train, Y_train = build_vocab()
 X_test, _, Y_test, _ = train_test_split(X_train, Y_train, test_size=0.2, random_state=42)
