@@ -1,8 +1,10 @@
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-from preprocess import X_train, Y_train, all_words, tags
 from model import ChatbotNN
+from preprocess import build_vocab, bag_of_words, tokenize
+
+all_words, tags, X_train, Y_train = build_vocab()
 
 # ---- Hyperparameters ----
 INPUT_SIZE  = len(all_words)   
