@@ -306,7 +306,7 @@ def run_gpa_help(user):
     top_label   = max(label_probs, key=label_probs.get)
     return GPA_RESPONSES[top_label]
 
-def run_course_selection(user):
+def run_course_reccomdation(user):
     label_probs  = predict_course_label(user)
     top_label    = max(label_probs, key=label_probs.get)
     course_dist  = build_course_distribution(label_probs)
@@ -321,11 +321,11 @@ def recommend(inputs):
     if topic == "gpa_help":
         _, gpa, major, concentration, year = inputs
         return run_gpa_help({"GPA": gpa, "MAJOR": major, "CONCENTRATION": concentration, "YEAR": year})
-    elif topic == "course_selection":
+    elif topic == "course_reccomdation":
         _, major, concentration, load, course_type, year = inputs
-        return run_course_selection({"MAJOR": major, "CONCENTRATION": concentration, "LOAD": load, "COURSE_TYPE": course_type, "YEAR": year})
+        return run_course_reccomdation({"MAJOR": major, "CONCENTRATION": concentration, "LOAD": load, "COURSE_TYPE": course_type, "YEAR": year})
     else:
-        raise ValueError(f"Unknown topic '{inputs[0]}'. Use 'gpa_help' or 'course_selection'.")
+        raise ValueError(f"Unknown topic '{inputs[0]}'. Use 'gpa_help' or 'course_reccomdation'.")
 
 
 # TEST RUN
@@ -335,14 +335,14 @@ if __name__ == "__main__":
         ["gpa_help",          2.5,  "CS",  "Software Design and Development", 3],
         ["gpa_help",          3.5,  "DSE", "None",                           3],
         ["gpa_help",          3.9,  "CSE", "Artificial Intelligence",        4],
-        ["course_selection",  "CSE", "Artificial Intelligence",              "Hard",   "Core",     3],
-        ["course_selection",  "CS",  "Cybersecurity",                        "Light",  "Elective", 2],
-        ["course_selection",  "CSE", "Systems and Networks",                 "Medium", "Core",     4],
-        ["course_selection",  "DSE", "None",                                 "Medium", "Core",     3],
-        ["course_selection",  "CS",  "Algorithms and Theory",                "Hard",   "Core",     3],
-        ["course_selection",  "CSE", "Bioinformatics",                       "Medium", "Elective", 2],
-        ["course_selection",  "CSE", "Software Design for Mobile Computing", "Medium", "Elective", 3],
-        ["course_selection",  "CSE", "Naval Science and Technology",         "Medium", "Core",     3],
+        ["course_reccomdation",  "CSE", "Artificial Intelligence",              "Hard",   "Core",     3],
+        ["course_reccomdation",  "CS",  "Cybersecurity",                        "Light",  "Elective", 2],
+        ["course_reccomdation",  "CSE", "Systems and Networks",                 "Medium", "Core",     4],
+        ["course_reccomdation",  "DSE", "None",                                 "Medium", "Core",     3],
+        ["course_reccomdation",  "CS",  "Algorithms and Theory",                "Hard",   "Core",     3],
+        ["course_reccomdation",  "CSE", "Bioinformatics",                       "Medium", "Elective", 2],
+        ["course_reccomdation",  "CSE", "Software Design for Mobile Computing", "Medium", "Elective", 3],
+        ["course_reccomdation",  "CSE", "Naval Science and Technology",         "Medium", "Core",     3],
     ]
     for t in tests:
         print(f"\nInput: {t}")
