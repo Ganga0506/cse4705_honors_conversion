@@ -62,6 +62,12 @@ def train_and_validate(X, y, label="model", val_size=0.2, random_state=42, y_cou
     clf = RandomForestClassifier(n_estimators=50, random_state=random_state)
     clf.fit(X_train, y_train)
 
+    # ADD HERE
+    feature_names = ["GPA", "YEAR", "MAJOR", "CONCENTRATION"] if X.shape[1] == 4 else ["YEAR", "MAJOR", "CONCENTRATION", "LOAD", "COURSE_TYPE"]
+    print(f"\n  -- Feature importances --")
+    for name, imp in zip(feature_names, clf.feature_importances_):
+        print(f"  {name}: {imp:.3f}")
+
     train_acc = accuracy_score(y_train, clf.predict(X_train))
     val_acc   = accuracy_score(y_val,   clf.predict(X_val))
 
