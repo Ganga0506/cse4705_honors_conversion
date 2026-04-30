@@ -1,12 +1,14 @@
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
-from ..preprocess import build_vocab
-from ..model import ChatbotNN
+from neural_network.preprocess import build_vocab
+from neural_network.model import ChatbotNN
+import os
 
 all_words, tags, X, Y = build_vocab()
 
-data = torch.load("chatbot_model.pth")
+model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "chatbot_model.pth")
+data = torch.load(model_path)
 model = ChatbotNN(data["input_size"], data["hidden_size"], data["output_size"])
 model.load_state_dict(data["model_state"])
 model.eval()
@@ -24,11 +26,11 @@ for x, y in zip(X, Y):
     correct.append(pred.item() == y)
 
 confidences = np.array(confidences)
-correct = np.array(correct)
+correct     = np.array(correct)
 
-print(f"Average confidence:          {confidences.mean():.4f}")
+print(f"Average confidence:           {confidences.mean():.4f}")
 print(f"Average confidence (correct): {confidences[correct].mean():.4f}")
-print(f"Average confidence (wrong):   {confidences[~correct].mean():.4f}")
+print(f"Average confidence (wrong):   {confidences[~correct].mean():.4f}" if (~correct).any() else "Average confidence (wrong):   N/A — no wrong predictions on training data")
 print(f"Below 0.6 threshold:          {(confidences < 0.6).sum()} samples")
 
 plt.hist(confidences, bins=20, edgecolor='black')
