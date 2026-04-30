@@ -2,7 +2,7 @@ import random
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 
-# 1. COURSE MAP 
+# 1. COURSE MAP
 course_map = {
 
     "FOLLOW_CORE_SEQUENCE": {
@@ -60,9 +60,26 @@ course_map = {
         "weights": [0.25, 0.20, 0.20, 0.15, 0.10, 0.05, 0.05]
     },
 
+    # ALL majors — CSE core sequence + full math prereq sequence across all levels
+    # (linear algebra, diff eq, multivariable calc, probability all gate real CSE work)
     "PREREQ_CATCH_UP": {
-        "courses": ["CSE1729", "CSE2050", "CSE2301", "CSE2500", "CSE3500"],
-        "weights": [0.30, 0.25, 0.20, 0.15, 0.10]
+        "courses": [
+            "CSE1729", "CSE2050", "CSE2500", "CSE3500",
+            "MATH1131Q", "MATH1132Q", "MATH2110Q", "MATH2210Q", "MATH2410Q",
+            "MATH3160", "STAT3025Q", "STAT3345Q",
+        ],
+        "weights": [0.15, 0.13, 0.10, 0.08, 0.12, 0.10, 0.09, 0.09, 0.07, 0.04, 0.02, 0.01]
+    },
+
+    # CSE (BSE) major only — engineering-specific courses CS/DSE students don't take
+    # includes CSE courses only BSE students need + ECE2001 + physics sequence
+    "ENGINEERING_CORE": {
+        "courses": [
+            "CSE2301", "CSE3504", "CSE3666", "CSE3302",
+            "ECE2001", "PHYS1501Q", "PHYS1502Q",
+            "MATH2210Q", "MATH2410Q", "MATH3160", "STAT3345Q",
+        ],
+        "weights": [0.18, 0.15, 0.12, 0.10, 0.13, 0.09, 0.09, 0.06, 0.04, 0.02, 0.02]
     },
 
     "ELECTIVE_EXPLORATION": {
@@ -175,9 +192,16 @@ def course_response(label, courses):
             f"Your priority courses: {course_str}."
         ),
         "PREREQ_CATCH_UP": (
-            f"You're behind on a prereq that's going to block you — fix this now before it cascades. "
-            f"Missing one prereq can push your entire concentration sequence back a full semester. "
-            f"Get these done first: {course_str}."
+            f"You're missing prereqs that will block you — don't let this slide. "
+            f"This covers both the CSE core sequence and the math chain (calc, linear algebra, diff eq, probability) "
+            f"that nearly every upper-level CSE course requires. "
+            f"Get these cleared first: {course_str}."
+        ),
+        "ENGINEERING_CORE": (
+            f"As a CSE (BSE) student you have engineering-specific requirements that CS and DSE students don't take. "
+            f"CSE2301, CSE3504, ECE2001, and the physics and upper math sequence are all BSE-only and have tight prereq chains — "
+            f"missing one pushes everything back. Plan these early. "
+            f"Your engineering core priorities: {course_str}."
         ),
         "ELECTIVE_EXPLORATION": (
             f"You have room to explore — use it deliberately. "
@@ -235,42 +259,106 @@ def encode_course_input(user):
 
 
 # TRAINING DATA
-X_gpa = np.array([
+# ── JSON schema ──────────────────────────────────────────────────────────────
+# gpa_data.json   → list of {"GPA": float, "YEAR": int, "MAJOR": str,
+#                             "CONCENTRATION": str, "LABEL": str}
+# course_data.json→ list of {"YEAR": int, "MAJOR": str, "CONCENTRATION": str,
+#                             "LOAD": str, "COURSE_TYPE": str, "LABEL": str}
+# ─────────────────────────────────────────────────────────────────────────────
+import json
+import os
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, classification_report
+
+def load_gpa_data(path="gpa_data.json"):
+    with open(path) as f:
+        records = json.load(f)
+    X = np.array([encode_gpa_input(r) for r in records])
+    y = np.array([r["LABEL"] for r in records])
+    return X, y
+
+def load_course_data(path="course_data.json"):
+    with open(path) as f:
+        records = json.load(f)
+    X = np.array([encode_course_input(r) for r in records])
+    y = np.array([r["LABEL"] for r in records])
+    return X, y
+
+def train_and_validate(X, y, label="model", val_size=0.2, random_state=42):
+    X_train, X_val, y_train, y_val = train_test_split(
+        X, y, test_size=val_size, random_state=random_state, stratify=y
+    )
+    clf = RandomForestClassifier(n_estimators=50, random_state=random_state)
+    clf.fit(X_train, y_train)
+
+    train_acc = accuracy_score(y_train, clf.predict(X_train))
+    val_acc   = accuracy_score(y_val,   clf.predict(X_val))
+
+    print(f"\n{'='*60}")
+    print(f"  {label}")
+    print(f"  Train size: {len(X_train)}  |  Val size: {len(X_val)}")
+    print(f"  Train accuracy : {train_acc:.3f}")
+    print(f"  Val   accuracy : {val_acc:.3f}")
+    if train_acc - val_acc > 0.15:
+        print("  ⚠  Gap > 15% — model may be overfitting. Add more data.")
+    print(f"\n{classification_report(y_val, clf.predict(X_val), zero_division=0)}")
+    print("="*60)
+
+    return clf
+
+
+# TRAIN MODELS
+# Falls back to the small hardcoded arrays if JSON files are not found yet.
+# Once you supply gpa_data.json and course_data.json, the JSON path is used.
+
+_X_gpa_fallback = np.array([
     [3.8, 3, 1, 0], [3.6, 2, 0, 8], [2.4, 2, 0, 8], [3.9, 4, 1, 0],
     [2.8, 3, 1, 1], [3.2, 2, 1, 1], [3.7, 3, 1, 0], [2.6, 1, 0, 8],
     [1.8, 1, 0, 8], [1.5, 2, 1, 2],
 ])
-y_gpa = np.array([
+_y_gpa_fallback = np.array([
     "ACCELERATE_TO_OPPORTUNITIES", "SUSTAIN_AND_OPTIMIZE",
-    "FOUNDATIONAL_HABIT_BUILDING", "ACCELERATE_TO_OPPORTUNITIES",
-    "TARGETED_COURSE_RECOVERY",    "SUSTAIN_AND_OPTIMIZE",
-    "ACCELERATE_TO_OPPORTUNITIES", "FOUNDATIONAL_HABIT_BUILDING",
-    "URGENT_INTERVENTION",         "URGENT_INTERVENTION",
+    "FOUNDATIONAL_HABIT_BUILDING",  "ACCELERATE_TO_OPPORTUNITIES",
+    "TARGETED_COURSE_RECOVERY",     "SUSTAIN_AND_OPTIMIZE",
+    "ACCELERATE_TO_OPPORTUNITIES",  "FOUNDATIONAL_HABIT_BUILDING",
+    "URGENT_INTERVENTION",          "URGENT_INTERVENTION",
 ])
 
-X_course = np.array([
-    [1, 0, 8, 1, 0],  [2, 1, 0, 1, 0],  [3, 1, 0, 2, 0],  [4, 1, 0, 2, 0],
-    [2, 0, 8, 0, 1],  [3, 1, 1, 1, 0],  [3, 1, 2, 1, 0],  [3, 1, 3, 1, 0],
-    [2, 1, 4, 1, 1],  [3, 1, 5, 1, 0],  [3, 0, 6, 2, 0],  [3, 2, 7, 1, 1],
-    [2, 2, 8, 1, 0],
+_X_course_fallback = np.array([
+    [1, 0, 8, 1, 0], [2, 1, 0, 1, 0], [3, 1, 0, 2, 0], [4, 1, 0, 2, 0],
+    [2, 0, 8, 0, 1], [3, 1, 1, 1, 0], [3, 1, 2, 1, 0], [3, 1, 3, 1, 0],
+    [2, 1, 4, 1, 1], [3, 1, 5, 1, 0], [3, 0, 6, 2, 0], [3, 2, 7, 1, 1],
+    [2, 2, 8, 1, 0], [1, 0, 8, 1, 0], [1, 2, 8, 1, 0], [2, 1, 8, 1, 0],
 ])
-y_course = np.array([
-    "FOLLOW_CORE_SEQUENCE",    "CONCENTRATION_AI",
-    "CHALLENGE_HEAVY_SEMESTER","SENIOR_DESIGN_MODE",
-    "REBALANCE_LOAD",          "CONCENTRATION_SOFTWARE",
-    "CONCENTRATION_SECURITY",  "CONCENTRATION_SYSTEMS",
-    "CONCENTRATION_MOBILE",    "CONCENTRATION_NAVAL",
-    "CONCENTRATION_ALGORITHMS","CONCENTRATION_BIOINFORMATICS",
-    "MAJOR_DATA_SCIENCE",
+_y_course_fallback = np.array([
+    "FOLLOW_CORE_SEQUENCE",     "CONCENTRATION_AI",
+    "CHALLENGE_HEAVY_SEMESTER", "SENIOR_DESIGN_MODE",
+    "REBALANCE_LOAD",           "CONCENTRATION_SOFTWARE",
+    "CONCENTRATION_SECURITY",   "CONCENTRATION_SYSTEMS",
+    "CONCENTRATION_MOBILE",     "CONCENTRATION_NAVAL",
+    "CONCENTRATION_ALGORITHMS", "CONCENTRATION_BIOINFORMATICS",
+    "MAJOR_DATA_SCIENCE",       "PREREQ_CATCH_UP",
+    "PREREQ_CATCH_UP",          "ENGINEERING_CORE",
 ])
 
+if os.path.exists("gpa_data.json"):
+    print("[INFO] Loading GPA data from gpa_data.json")
+    X_gpa, y_gpa = load_gpa_data("gpa_data.json")
+    gpa_model = train_and_validate(X_gpa, y_gpa, label="GPA MODEL")
+else:
+    print("[INFO] gpa_data.json not found — using fallback data (no validation split)")
+    gpa_model = RandomForestClassifier(n_estimators=50, random_state=42)
+    gpa_model.fit(_X_gpa_fallback, _y_gpa_fallback)
 
-# TRAIN MODELS
-gpa_model = RandomForestClassifier(n_estimators=50, random_state=42)
-gpa_model.fit(X_gpa, y_gpa)
+if os.path.exists("course_data.json"):
+    print("[INFO] Loading course data from course_data.json")
+    X_course, y_course = load_course_data("course_data.json")
+    course_model = train_and_validate(X_course, y_course, label="COURSE MODEL")
+else:
+    print("[INFO] course_data.json not found — using fallback data (no validation split)")
+    course_model = RandomForestClassifier(n_estimators=50, random_state=42)
+    course_model.fit(_X_course_fallback, _y_course_fallback)
 
-course_model = RandomForestClassifier(n_estimators=50, random_state=42)
-course_model.fit(X_course, y_course)
 
 
 # PREDICT + SAMPLE
@@ -306,7 +394,7 @@ def run_gpa_help(user):
     top_label   = max(label_probs, key=label_probs.get)
     return GPA_RESPONSES[top_label]
 
-def run_course_reccomdation(user):
+def run_course_selection(user):
     label_probs  = predict_course_label(user)
     top_label    = max(label_probs, key=label_probs.get)
     course_dist  = build_course_distribution(label_probs)
@@ -321,28 +409,34 @@ def recommend(inputs):
     if topic == "gpa_help":
         _, gpa, major, concentration, year = inputs
         return run_gpa_help({"GPA": gpa, "MAJOR": major, "CONCENTRATION": concentration, "YEAR": year})
-    elif topic == "course_reccomdation":
+    elif topic == "course_selection":
         _, major, concentration, load, course_type, year = inputs
-        return run_course_reccomdation({"MAJOR": major, "CONCENTRATION": concentration, "LOAD": load, "COURSE_TYPE": course_type, "YEAR": year})
+        return run_course_selection({"MAJOR": major, "CONCENTRATION": concentration, "LOAD": load, "COURSE_TYPE": course_type, "YEAR": year})
     else:
-        raise ValueError(f"Unknown topic '{inputs[0]}'. Use 'gpa_help' or 'course_reccomdation'.")
+        raise ValueError(f"Unknown topic '{inputs[0]}'. Use 'gpa_help' or 'course_selection'.")
 
 
 # TEST RUN
 if __name__ == "__main__":
     tests = [
-        ["gpa_help",          1.8,  "CSE", "None",                           2],
-        ["gpa_help",          2.5,  "CS",  "Software Design and Development", 3],
-        ["gpa_help",          3.5,  "DSE", "None",                           3],
-        ["gpa_help",          3.9,  "CSE", "Artificial Intelligence",        4],
-        ["course_reccomdation",  "CSE", "Artificial Intelligence",              "Hard",   "Core",     3],
-        ["course_reccomdation",  "CS",  "Cybersecurity",                        "Light",  "Elective", 2],
-        ["course_reccomdation",  "CSE", "Systems and Networks",                 "Medium", "Core",     4],
-        ["course_reccomdation",  "DSE", "None",                                 "Medium", "Core",     3],
-        ["course_reccomdation",  "CS",  "Algorithms and Theory",                "Hard",   "Core",     3],
-        ["course_reccomdation",  "CSE", "Bioinformatics",                       "Medium", "Elective", 2],
-        ["course_reccomdation",  "CSE", "Software Design for Mobile Computing", "Medium", "Elective", 3],
-        ["course_reccomdation",  "CSE", "Naval Science and Technology",         "Medium", "Core",     3],
+        # GPA tests
+        ["gpa_help",         1.8,  "CSE", "None",                           2],
+        ["gpa_help",         2.5,  "CS",  "Software Design and Development", 3],
+        ["gpa_help",         3.5,  "DSE", "None",                           3],
+        ["gpa_help",         3.9,  "CSE", "Artificial Intelligence",        4],
+        # Concentration tests
+        ["course_selection", "CSE", "Artificial Intelligence",              "Hard",   "Core",     3],
+        ["course_selection", "CS",  "Cybersecurity",                        "Light",  "Elective", 2],
+        ["course_selection", "CSE", "Systems and Networks",                 "Medium", "Core",     4],
+        ["course_selection", "DSE", "None",                                 "Medium", "Core",     3],
+        ["course_selection", "CS",  "Algorithms and Theory",                "Hard",   "Core",     3],
+        ["course_selection", "CSE", "Bioinformatics",                       "Medium", "Elective", 2],
+        ["course_selection", "CSE", "Software Design for Mobile Computing", "Medium", "Elective", 3],
+        ["course_selection", "CSE", "Naval Science and Technology",         "Medium", "Core",     3],
+        # New label tests — PREREQ, MATH, ENGINEERING_CORE
+        ["course_selection", "CS",  "None",                                 "Medium", "Core",     1],
+        ["course_selection", "DSE", "None",                                 "Light",  "Core",     1],
+        ["course_selection", "CSE", "None",                                 "Medium", "Core",     2],
     ]
     for t in tests:
         print(f"\nInput: {t}")
