@@ -64,7 +64,8 @@ CONCENTRATIONS = {
 }
 
 LOAD = {
-    "light": "Light", "easy": "Light", "lighter": "Light",
+    "light": "Light", "easy": "Light", "lighter": "Light", "not too hard": "Light",
+    "not hard": "Light", "manageable": "Light", "chill": "Light",
     "medium": "Medium", "moderate": "Medium",
     "hard": "Hard", "harder": "Hard", "challenging": "Hard"
 }
@@ -83,7 +84,7 @@ YEAR_WORDS = {
 
 # ---- Extractor functions ----
 def extract_gpa(text):
-    match = re.search(r'\b([0-4]\.\d{1,2})\b', text)
+    match = re.search(r'\b([0-4](\.\d{1,2})?)\b', text)
     if match:
         gpa = float(match.group(1))
         if 0.0 <= gpa <= 4.0:

@@ -133,7 +133,7 @@ def chat(user_message):
         slots.get("concentration"),
         slots.get("load_preference"),
         slots.get("course_type"),   
-        slots.get("year")         
+        slots.get("year")
         ]
 
     elif intent == "study_habits":
@@ -148,7 +148,7 @@ def chat(user_message):
     return recommend(inputs)
 
 if __name__ == "__main__":
-    print("Chatbot ready. Type 'quit' to exit.\n")
+    print("Hi, I can help with study strategies or choosing courses. What do you need help with?")
     while True:
         msg = input("You: ")
         if msg.lower() == "quit":

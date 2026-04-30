@@ -292,7 +292,7 @@ def train_and_validate(X, y, label="model", val_size=0.2, random_state=42):
     clf.fit(X_train, y_train)
 
     train_acc = accuracy_score(y_train, clf.predict(X_train))
-    val_acc   = accuracy_score(y_val,   clf.predict(X_val))
+    val_acc   = accuracy_score(y_val,   clf.predictquit(X_val))
 
     print(f"\n{'='*60}")
     print(f"  {label}")
