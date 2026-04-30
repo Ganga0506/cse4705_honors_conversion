@@ -108,11 +108,11 @@ def train_and_validate(X, y, label="model", val_size=0.2, random_state=42, y_cou
     return clf
 
 if __name__ == "__main__":
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    gpa_data_path = os.path.join(base_dir, "d_data", "gpa_data.json")
-    course_data_path = os.path.join(base_dir, "d_data", "course_data.json")
-    gpa_model_path = os.path.join(base_dir, "gpa_model.pkl")
-    course_model_path = os.path.join(base_dir, "course_model.pkl")
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    gpa_data_path = os.path.join(current_dir, "d_data", "gpa_data.json")
+    course_data_path = os.path.join(current_dir, "d_data", "course_data.json")
+    gpa_model_path = os.path.join(current_dir, "gpa_model.pkl")
+    course_model_path = os.path.join(current_dir, "course_model.pkl")
 
     _X_gpa_fallback = np.array([[3.8, 3, 1, 0], [3.6, 2, 0, 8], [2.4, 2, 0, 8], [3.9, 4, 1, 0],
                                 [2.8, 3, 1, 1], [3.2, 2, 1, 1], [3.7, 3, 1, 0], [2.6, 1, 0, 8]])

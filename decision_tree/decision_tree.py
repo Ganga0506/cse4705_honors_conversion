@@ -65,9 +65,9 @@ def sample_from_distribution(course_dist, k=3):
     return list(np.random.choice(courses, size=min(k, len(courses)), replace=False, p=weights))
 
 # LOAD MODELS
-base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-gpa_model_path = os.path.join(base_dir, "gpa_model.pkl")
-course_model_path = os.path.join(base_dir, "course_model.pkl")
+current_dir = os.path.dirname(os.path.abspath(__file__))
+gpa_model_path = os.path.join(current_dir, "gpa_model.pkl")
+course_model_path = os.path.join(current_dir, "course_model.pkl")
 
 gpa_model = None
 course_model = None
