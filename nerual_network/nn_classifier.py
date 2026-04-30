@@ -75,8 +75,8 @@ def get_missing_followup(slots, intent):
             return "What's your major? (CS, CSE, or DSE)"
         if slots.get("load_preference") is None:
             return "Do you want a light, medium, or hard course load?"
-        if slots.get("concentration") is None:
-            return "Do you have a concentration? (e.g. AI, Cybersecurity, Software, Systems, etc.)"
+        if slots.get("major") != "DSE" and slots.get("concentration") is None:  
+            return "Do you have a concentration? (AI, Software, Cybersecurity, Systems, Mobile, Naval, Algorithms, Bioinformatics, or None)?"
         if slots.get("course_type") is None:
             return "Do you prefer core or elective courses?"
 
@@ -87,8 +87,8 @@ def get_missing_followup(slots, intent):
             return "What year are you? (freshman, sophomore, junior, or senior)"
         if slots.get("major") is None:
             return "What's your major? (CS, CSE, or DSE)"
-        if slots.get("concentration") is None:
-            return "Do you have a concentration? (e.g. AI, Cybersecurity, Software, Systems, etc.)"
+        if slots.get("major") != "DSE" and slots.get("concentration") is None: 
+            return "Do you have a concentration? (AI, Software, Cybersecurity, Systems, Mobile, Naval, Algorithms, Bioinformatics, or None)?"
 
     return None
 
@@ -130,7 +130,7 @@ def chat(user_message):
         inputs = [
             "course_recommendation",
         slots.get("major"),
-        slots.get("concentration"),
+        slots.get("concentration") or "None", 
         slots.get("load_preference"),
         slots.get("course_type"),   
         slots.get("year")         
@@ -141,7 +141,7 @@ def chat(user_message):
             "gpa_help",
             slots.get("gpa"),
             slots.get("major"),
-            slots.get("concentration"),
+            slots.get("concentration")  or "None",
             slots.get("year")
         ]
 

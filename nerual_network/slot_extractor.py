@@ -63,6 +63,8 @@ CONCENTRATIONS = {
     "distributed systems": "Systems and Networks"
 }
 
+NO_CONCENTRATION = ["no", "none", "n/a", "nope", "i don't have one", "no concentration"]
+
 LOAD = {
     "light": "Light", "easy": "Light", "lighter": "Light", "not too hard": "Light",
     "not hard": "Light", "manageable": "Light", "chill": "Light",
@@ -109,7 +111,9 @@ def extract_major(text):
     return None
 
 def extract_concentration(text):
-    text_lower = text.lower()
+    text_lower = text.lower().strip()
+    if any(phrase in text_lower for phrase in NO_CONCENTRATION):
+        return "None"
     for key, val in CONCENTRATIONS.items():
         if key in text_lower:
             return val
