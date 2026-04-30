@@ -1,8 +1,8 @@
 import torch
 import numpy as np
-from model import ChatbotNN
-from preprocess import tokenize, bag_of_words
-from slot_extractor import extract_slots
+from nerual_network.model import ChatbotNN
+from nerual_network.preprocess import tokenize, bag_of_words
+from nerual_network.slot_extractor import extract_slots
 from decision_tree.decision_tree import recommend
 
 # ---- Load saved model ----

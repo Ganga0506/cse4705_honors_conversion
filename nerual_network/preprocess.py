@@ -22,7 +22,7 @@ def bag_of_words(tokenized_sentence, vocab):
             bow[idx] = 1.0
     return bow
 
-def build_vocab(intents_path='data/intents.json'):
+def build_vocab(intents_path='nerual_network/nn_data/intents.json'):
     with open(intents_path, 'r') as f:
         intents = json.load(f)
 

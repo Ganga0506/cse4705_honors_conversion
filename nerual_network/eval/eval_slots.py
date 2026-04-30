@@ -1,4 +1,4 @@
-from slot_extractor import extract_slots
+from nerual_network.slot_extractor import extract_slots
 
 tests = [
     ("I am a junior CSE student with AI concentration", "course_recommendation",

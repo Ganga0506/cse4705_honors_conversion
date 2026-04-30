@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-from model import ChatbotNN
-from preprocess import build_vocab, bag_of_words, tokenize
+from nerual_network.model import ChatbotNN
+from nerual_network.preprocess import build_vocab
 
 all_words, tags, X_train, Y_train = build_vocab()
 

@@ -1,4 +1,4 @@
-from nn_classifier import chat, session
+from nerual_network.nn_classifier import chat, session
 
 def reset_session():
     session["pending_intent"] = None
