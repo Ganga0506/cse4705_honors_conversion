@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advisor Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <main class="chat-container">
+      <h1 class="chat-header">Advisor Chatbot</h1>
+
+      <section class="chat-messages" id="chat-messages">
+        {% if not chat_history %}
+        <p class="empty-state">
+          Ask for GPA advice or course recommendations to get started.
+        </p>
+        {% endif %}
+
+        {% for exchange in chat_history %}
+        <div class="message user">{{ exchange.user }}</div>
+        <div class="message bot">{{ exchange.bot }}</div>
+        {% endfor %}
+      </section>
+
+      <form class="chat-form" method="POST" action="/">
+        <input
+          type="text"
+          id="message"
+          name="message"
+          placeholder="Type your message..."
+          autofocus
+          required
+        />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+
+    <script>
+      // Auto-scroll to bottom on load
+      const messages = document.getElementById("chat-messages");
+      messages.scrollTop = messages.scrollHeight;
+
+      // Re-focus input after form submit
+      document.querySelector(".chat-form").addEventListener("submit", function () {
+        setTimeout(() => {
+          document.getElementById("message").focus();
+        }, 100);
+      });
+    </script>
+  </body>
+</html>

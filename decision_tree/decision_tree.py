@@ -4,7 +4,10 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 import random
 import pickle
 import numpy as np
-from labels import course_map, GPA_RESPONSES, course_response
+try:
+    from decision_tree.labels import course_map, GPA_RESPONSES, course_response
+except ImportError:
+    from labels import course_map, GPA_RESPONSES, course_response
 
 # ENCODING HELPERS
 major_map         = {"CS": 0, "CSE": 1, "DSE": 2}
