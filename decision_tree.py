@@ -60,8 +60,6 @@ course_map = {
         "weights": [0.25, 0.20, 0.20, 0.15, 0.10, 0.05, 0.05]
     },
 
-    # ALL majors — CSE core sequence + full math prereq sequence across all levels
-    # (linear algebra, diff eq, multivariable calc, probability all gate real CSE work)
     "PREREQ_CATCH_UP": {
         "courses": [
             "CSE1729", "CSE2050", "CSE2500", "CSE3500",
@@ -71,8 +69,6 @@ course_map = {
         "weights": [0.15, 0.13, 0.10, 0.08, 0.12, 0.10, 0.09, 0.09, 0.07, 0.04, 0.02, 0.01]
     },
 
-    # CSE (BSE) major only — engineering-specific courses CS/DSE students don't take
-    # includes CSE courses only BSE students need + ECE2001 + physics sequence
     "ENGINEERING_CORE": {
         "courses": [
             "CSE2301", "CSE3504", "CSE3666", "CSE3302",
@@ -241,17 +237,23 @@ load_map        = {"Light": 0, "Medium": 1, "Hard": 2}
 course_type_map = {"Core": 0, "Elective": 1}
 
 def encode_gpa_input(user):
+    # FIX #7: raise on unknown MAJOR instead of silently defaulting
+    if user["MAJOR"] not in major_map:
+        raise ValueError(f"Invalid MAJOR '{user['MAJOR']}'. Expected one of: {list(major_map.keys())}")
     return [
         user["GPA"],
         user["YEAR"],
-        major_map.get(user["MAJOR"], 0),
+        major_map[user["MAJOR"]],
         concentration_map.get(user["CONCENTRATION"], 8),
     ]
 
 def encode_course_input(user):
+    # FIX #7: raise on unknown MAJOR instead of silently defaulting
+    if user["MAJOR"] not in major_map:
+        raise ValueError(f"Invalid MAJOR '{user['MAJOR']}'. Expected one of: {list(major_map.keys())}")
     return [
         user["YEAR"],
-        major_map.get(user["MAJOR"], 0),
+        major_map[user["MAJOR"]],
         concentration_map.get(user["CONCENTRATION"], 8),
         load_map.get(user["LOAD"], 1),
         course_type_map.get(user["COURSE_TYPE"], 0),
@@ -259,12 +261,6 @@ def encode_course_input(user):
 
 
 # TRAINING DATA
-# ── JSON schema ──────────────────────────────────────────────────────────────
-# gpa_data.json   → list of {"GPA": float, "YEAR": int, "MAJOR": str,
-#                             "CONCENTRATION": str, "LABEL": str}
-# course_data.json→ list of {"YEAR": int, "MAJOR": str, "CONCENTRATION": str,
-#                             "LOAD": str, "COURSE_TYPE": str, "LABEL": str}
-# ─────────────────────────────────────────────────────────────────────────────
 import json
 import os
 from sklearn.model_selection import train_test_split
@@ -280,14 +276,75 @@ def load_gpa_data(path="gpa_data.json"):
 def load_course_data(path="course_data.json"):
     with open(path) as f:
         records = json.load(f)
-    X = np.array([encode_course_input(r) for r in records])
-    y = np.array([r["LABEL"] for r in records])
-    return X, y
+    X        = np.array([encode_course_input(r) for r in records])
+    y_labels = np.array([r["LABEL"] for r in records])
+    # COURSES field: list of 3 expected courses per record (may be absent in old data)
+    y_courses = np.array([r.get("COURSES", []) for r in records], dtype=object)
+    return X, y_labels, y_courses
 
-def train_and_validate(X, y, label="model", val_size=0.2, random_state=42):
-    X_train, X_val, y_train, y_val = train_test_split(
-        X, y, test_size=val_size, random_state=random_state, stratify=y
+def build_course_distribution(label_probs):
+    combined = {}
+    for label, prob in label_probs.items():
+        if label not in course_map:
+            continue
+        courses = course_map[label]["courses"]
+        weights = course_map[label]["weights"]
+        for c, w in zip(courses, weights):
+            combined[c] = combined.get(c, 0) + prob * w
+    return combined
+
+def sample_from_distribution(course_dist, k=3):
+    courses = list(course_dist.keys())
+    weights = np.array(list(course_dist.values()))
+
+    # FIX #4: guard against zero-sum weights (empty distribution)
+    if weights.sum() == 0:
+        return random.sample(courses, k=min(k, len(courses)))
+
+    weights = weights / weights.sum()
+    return list(np.random.choice(courses, size=min(k, len(courses)), replace=False, p=weights))
+
+def _safe_stratify(y):
+    """
+    FIX #3: Return y for stratified split only if every class has >= 2 samples.
+    Otherwise return None to avoid a crash on tiny datasets.
+    """
+    unique, counts = np.unique(y, return_counts=True)
+    if len(unique) > 1 and counts.min() >= 2:
+        return y
+    return None
+
+def _course_overlap_accuracy(predicted_courses_list, expected_courses_list):
+    """
+    For each val sample, compute what fraction of the 3 predicted courses
+    appear in the expected set.  Average across all samples.
+
+    - Full match  (3/3) → 1.0
+    - Partial     (2/3) → 0.67
+    - No overlap  (0/3) → 0.0
+
+    This is intentionally lenient: the sampler is probabilistic so we
+    reward partial overlap rather than requiring an exact ordered match.
+    """
+    scores = []
+    for predicted, expected in zip(predicted_courses_list, expected_courses_list):
+        if expected is None or len(expected) == 0:  # no ground truth available → skip
+            continue
+        expected_set = set(expected)
+        hits = sum(1 for c in predicted if c in expected_set)
+        scores.append(hits / len(predicted) if predicted else 0.0)
+    return float(np.mean(scores)) if scores else 0.0
+
+def train_and_validate(X, y, label="model", val_size=0.2, random_state=42,
+                       y_courses=None):
+    strat = _safe_stratify(y)
+    indices = np.arange(len(X))
+    idx_train, idx_val = train_test_split(
+        indices, test_size=val_size, random_state=random_state, stratify=strat
     )
+    X_train, X_val   = X[idx_train], X[idx_val]
+    y_train, y_val   = y[idx_train], y[idx_val]
+
     clf = RandomForestClassifier(n_estimators=50, random_state=random_state)
     clf.fit(X_train, y_train)
 
@@ -297,10 +354,54 @@ def train_and_validate(X, y, label="model", val_size=0.2, random_state=42):
     print(f"\n{'='*60}")
     print(f"  {label}")
     print(f"  Train size: {len(X_train)}  |  Val size: {len(X_val)}")
-    print(f"  Train accuracy : {train_acc:.3f}")
-    print(f"  Val   accuracy : {val_acc:.3f}")
+    print(f"  ── Label accuracy ──────────────────────────")
+    print(f"  Train label accuracy : {train_acc:.3f}")
+    print(f"  Val   label accuracy : {val_acc:.3f}")
     if train_acc - val_acc > 0.15:
         print("  ⚠  Gap > 15% — model may be overfitting. Add more data.")
+    if strat is None:
+        print("  ⚠  Stratification disabled — too few samples per class.")
+
+    # ── Course-level evaluation (only for course model) ───────────────────
+    if y_courses is not None:
+        y_courses_val = y_courses[idx_val]
+
+        # Run the full course pipeline on each val sample to get predicted courses
+        predicted_courses_list = []
+        for x_row, expected_label in zip(X_val, y_val):
+            # Reconstruct a fake user dict from encoded features so we can
+            # reuse the existing predict/sample pipeline
+            pred_label_probs = {
+                lbl: clf.predict_proba([x_row])[0][i]
+                for i, lbl in enumerate(clf.classes_)
+            }
+            top_label = max(pred_label_probs, key=pred_label_probs.get)
+            if pred_label_probs[top_label] > 0.6:
+                available = course_map.get(top_label, {}).get("courses", [])
+                sampled = random.sample(available, k=min(3, len(available))) if available else []
+            else:
+                dist    = build_course_distribution(pred_label_probs)
+                sampled = sample_from_distribution(dist, k=3)
+            predicted_courses_list.append(sampled)
+
+        course_overlap = _course_overlap_accuracy(predicted_courses_list, y_courses_val)
+
+        # Exact match: all 3 predicted courses are in the expected set
+        exact_matches = sum(
+            1 for pred, exp in zip(predicted_courses_list, y_courses_val)
+            if len(exp) > 0 and set(pred).issubset(set(exp))
+        )
+        exact_match_rate = exact_matches / len(y_courses_val) if len(y_courses_val) else 0
+
+        print(f"\n  ── Course accuracy (probabilistic sampler) ─────────")
+        print(f"  Val course overlap accuracy : {course_overlap:.3f}  "
+              f"(avg fraction of recommended courses that are correct)")
+        print(f"  Val exact-set match rate    : {exact_match_rate:.3f}  "
+              f"(all 3 recommended courses in expected set)")
+        print(f"\n  ℹ  Course accuracy < label accuracy is EXPECTED —")
+        print(f"     the sampler is probabilistic and draws from the full")
+        print(f"     label pool, not just the top-3 ground truth courses.")
+
     print(f"\n{classification_report(y_val, clf.predict(X_val), zero_division=0)}")
     print("="*60)
 
@@ -308,9 +409,6 @@ def train_and_validate(X, y, label="model", val_size=0.2, random_state=42):
 
 
 # TRAIN MODELS
-# Falls back to the small hardcoded arrays if JSON files are not found yet.
-# Once you supply gpa_data.json and course_data.json, the JSON path is used.
-
 _X_gpa_fallback = np.array([
     [3.8, 3, 1, 0], [3.6, 2, 0, 8], [2.4, 2, 0, 8], [3.9, 4, 1, 0],
     [2.8, 3, 1, 1], [3.2, 2, 1, 1], [3.7, 3, 1, 0], [2.6, 1, 0, 8],
@@ -346,59 +444,53 @@ if os.path.exists("gpa_data.json"):
     X_gpa, y_gpa = load_gpa_data("gpa_data.json")
     gpa_model = train_and_validate(X_gpa, y_gpa, label="GPA MODEL")
 else:
-    print("[INFO] gpa_data.json not found — using fallback data (no validation split)")
+    print("[INFO] gpa_data.json not found — using fallback data (prototype mode, no validation split)")
     gpa_model = RandomForestClassifier(n_estimators=50, random_state=42)
     gpa_model.fit(_X_gpa_fallback, _y_gpa_fallback)
 
 if os.path.exists("course_data.json"):
     print("[INFO] Loading course data from course_data.json")
-    X_course, y_course = load_course_data("course_data.json")
-    course_model = train_and_validate(X_course, y_course, label="COURSE MODEL")
+    X_course, y_course, y_courses = load_course_data("course_data.json")
+    course_model = train_and_validate(X_course, y_course, label="COURSE MODEL",
+                                      y_courses=y_courses)
 else:
-    print("[INFO] course_data.json not found — using fallback data (no validation split)")
+    print("[INFO] course_data.json not found — using fallback data (prototype mode, no validation split)")
     course_model = RandomForestClassifier(n_estimators=50, random_state=42)
     course_model.fit(_X_course_fallback, _y_course_fallback)
 
 
-
 # PREDICT + SAMPLE
+
 def predict_gpa_label(user):
+    # FIX #2: explicit index-based zip to guarantee label↔prob alignment
     probs = gpa_model.predict_proba([encode_gpa_input(user)])[0]
-    return dict(zip(gpa_model.classes_, probs))
+    return {label: probs[i] for i, label in enumerate(gpa_model.classes_)}
 
 def predict_course_label(user):
+    # FIX #2: explicit index-based zip to guarantee label↔prob alignment
     probs = course_model.predict_proba([encode_course_input(user)])[0]
-    return dict(zip(course_model.classes_, probs))
-
-def build_course_distribution(label_probs):
-    combined = {}
-    for label, prob in label_probs.items():
-        if label not in course_map:
-            continue
-        courses = course_map[label]["courses"]
-        weights = course_map[label]["weights"]
-        for c, w in zip(courses, weights):
-            combined[c] = combined.get(c, 0) + prob * w
-    return combined
-
-def sample_from_distribution(course_dist, k=3):
-    courses = list(course_dist.keys())
-    weights = np.array(list(course_dist.values()))
-    weights = weights / weights.sum()
-    return list(np.random.choice(courses, size=k, replace=False, p=weights))
+    return {label: probs[i] for i, label in enumerate(course_model.classes_)}
 
 
 # PIPELINES
+
 def run_gpa_help(user):
     label_probs = predict_gpa_label(user)
     top_label   = max(label_probs, key=label_probs.get)
     return GPA_RESPONSES[top_label]
 
 def run_course_selection(user):
-    label_probs  = predict_course_label(user)
-    top_label    = max(label_probs, key=label_probs.get)
-    course_dist  = build_course_distribution(label_probs)
-    courses      = sample_from_distribution(course_dist, k=3)
+    label_probs = predict_course_label(user)
+    top_label   = max(label_probs, key=label_probs.get)
+
+    # FIX #5: if one label dominates (>60%), use it directly instead of blending
+    if label_probs[top_label] > 0.6:
+        available = course_map.get(top_label, {}).get("courses", [])
+        courses = random.sample(available, k=min(3, len(available))) if available else []
+    else:
+        course_dist = build_course_distribution(label_probs)
+        courses     = sample_from_distribution(course_dist, k=3)
+
     return course_response(top_label, courses)
 
 
