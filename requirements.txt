@@ -1,4 +1,7 @@
-nltk==3.8.1
-numpy==1.26.4
-torch==2.2.2
-scikit-learn==1.5.1
+flask
+matplotlib
+nltk
+numpy
+scikit-learn
+seaborn
+torch
