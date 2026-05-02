@@ -1,6 +1,6 @@
 # Decision Tree Chatbot — Academic Advising Component
 
-> **Course project:** Comparative analysis of a rule-based / tree-based advising chatbot vs. a neural network classifier.
+> **Course project:** Comparative analysis of a rule-based / tree-based advising chatbot with an inital neural network classifier.
 > This component is the **decision tree side** of that comparison. It is designed to demonstrate both the engineering skills involved in building a probabilistic tree-based pipeline *and* the fundamental limitations that make this approach fail relative to a neural network on real advising data.
 
 ---
@@ -87,14 +87,13 @@ Within each label, courses are not selected uniformly — each has a priority we
 | GPA    | 1.0000      | 1.00     | 1.00    |
 | Course | 1.0000      | 1.00     | 1.00    |
 
-Every metric is perfect. Every confusion matrix is a clean diagonal. This is not a success — **it is the failure mode made visible.**
+Every metric is perfect. Every confusion matrix is a clean diagonal. This is not a success.
 
 ### Root Cause 1: Synthetic, Rule-Based Training Data
 The training data was programmatically generated with deterministic label assignment:
-- GPA labels are assigned by hard GPA thresholds with no overlap (e.g. GPA < 2.0 → `URGENT_INTERVENTION`, always)
-- Course labels are assigned by concentration alone — every student with `Artificial Intelligence` concentration gets `CONCENTRATION_AI`, regardless of year, load, or course type
 
-The Random Forest doesn't learn anything meaningful. It memorizes the same rules that generated the data. A lookup table would perform identically.
+The Random Forest doesn't learn anything meaningful. It memorizes the same rules that generated the data. This problem has been avoided when it comes to course selection part with probability. 
+Yet, it shows how decison trees perform really poorly when it comes to interactive interfaces since it needs to be hard-coded.
 
 ### Root Cause 2: Feature Importance Collapse
 The feature importance plots confirm this directly:
@@ -102,17 +101,7 @@ The feature importance plots confirm this directly:
 - **GPA model**: GPA alone accounts for ~99% of importance. YEAR, MAJOR, and CONCENTRATION contribute essentially nothing.
 - **Course model**: CONCENTRATION accounts for ~45%, YEAR ~30%. COURSE_TYPE registers near zero — it has no predictive signal in the data.
 
-### Root Cause 3: Calibration Breakdown
-The calibration plots show the model outputs probabilities of either 0 or 1 with no uncertainty. On the course model, every class collapses to just two points — (0, 0) and (1, 1). A well-calibrated model should distribute predicted probabilities smoothly along the diagonal. This model is not probabilistic in any meaningful sense; it is a hard classifier pretending to output probabilities.
-
-### Why a Neural Network Does Better on This Task
-A properly trained neural network (see companion component) can:
-- Learn non-linear feature interactions (e.g. how GPA + year + load together predict risk)
-- Generalize to student profiles that fall between label boundaries
-- Produce calibrated uncertainty estimates that reflect genuine ambiguity
-- Be trained on real advising data where labels are not deterministic
-
-The decision tree approach is fundamentally limited here because the task requires understanding combinations of features, not just finding a single dominant split variable. When GPA alone determines the label, a tree will find that split immediately and ignore everything else — which is exactly what the feature importance plot shows.
+This happens because we trained on less features. 
 
 ---
 
@@ -147,6 +136,6 @@ python audit_data.py
 
 ## Conclusion
 
-This component succeeds as an engineering exercise — it implements a full ML pipeline with probabilistic output, weighted sampling, cross-validated evaluation, and diagnostic tooling. The probabilistic course distribution layer in particular is a meaningful improvement over naive argmax classification.
+This component implements a full ML pipeline with probabilistic output, weighted sampling, cross-validated evaluation, and diagnostic tooling. The probabilistic course distribution layer in particular is a meaningful improvement over naive argmax classification.
 
-It fails as an advising system for the reasons documented above: synthetic deterministic training data makes perfect metrics meaningless, feature importance collapses to a single variable, and the model learns rules rather than patterns. That failure is the intended result of this experiment, and the comparison with the neural network component demonstrates why representation learning is better suited to this kind of advising task.
+It fails as an advising system for the reasons documented above: synthetic deterministic training data makes perfect metrics meaningless and feature importance collapses to a single variable. That failure is the intended result of this experiment, and the comparison with the neural network component demonstrates why representation learning is better suited to this kind of advising task.
